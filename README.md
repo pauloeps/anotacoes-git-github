@@ -83,7 +83,7 @@ Na master fica o código base, que deve estar sempre funcionando. Quando vai se 
 
 * `git checkout [NOME DA SUA BRANCH]` - Volta para sua branch
 
-* `git merge master` - Mescla a master que foi baixada com atualizações, terá conflitos e você precisa resolver estes conflitos. Nos arquivos onde ocorreram conflitos, haverão indicações indicando as alterações que vieram da master e o código seu como estava antes, você terá que decidir quais alterações vai querer manter ou modificar e o que você quer mudar no seu código. Resolvidos os conflitos, é um bom hábito dar um "git status" para verificar o status do repositório. **OBS:** como alternativa, você pode usar o comando `git rebase -i master` que é mais correto. Se escolher essa alternativa, você não precisará fazer os dois próximos passos.
+* `git merge master` - Mescla a master que foi baixada com atualizações, terá conflitos e você precisa resolver estes conflitos. Nos arquivos onde ocorreram conflitos, haverão indicações indicando as alterações que vieram da master e o código seu como estava antes, você terá que decidir quais alterações vai querer manter ou modificar e o que você quer mudar no seu código. Resolvidos os conflitos, é um bom hábito dar um "git status" para verificar o status do repositório. **OBS:** como alternativa, você pode usar o comando `git rebase -i master` que é mais correto. Se escolher essa alternativa, você não precisará fazer os dois próximos passos. [Diferenças entre merge e rebase](https://www.atlassian.com/br/git/tutorials/merging-vs-rebasing)
 
 * `git add .` - Para adicionar as modificações feitas para resolver os conflitos
 
