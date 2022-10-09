@@ -45,7 +45,7 @@ Todo commit possui um código hash que é um identificador único. Para desfazer
 
 Para transferir mudanças de código do repositório remoto no seu repositório local, utilize o comando `git pull`. Para transferir mudanças de código do seu repositório local para o repositório remoto, utilize o comando `git push`.
 
-Ao utilizar um repositório https, o git pode ficar pedindo suas credenciais toda vez que você fizer um push ou pull. Para resolver isso, digite o seguinte comando: `git config --global credential.helper cache -timeout=600`. O valor de timeout pode ser modificado de acordo com a sua preferência. É importante colocar o timeout pois sua senha será armazenada em um arquivo de texto no seu computador, sem criptografia, então é um risco de segurança se você esquecer de apagar ela. Caso apareça alguma janela, apenas feche ela que suas credenciais ficaram temporariamente salvas agora, para evitar a inconveniência de digitá-las toda vez.
+Ao utilizar um repositório https, o git pode ficar pedindo suas credenciais toda vez que você fizer um push ou pull. Para resolver isso, digite o seguinte comando: `git config --global credential.helper cache -timeout=3600`. O valor de timeout é em segundos e pode ser modificado de acordo com a sua preferência. É importante colocar o timeout pois sua senha será armazenada em um arquivo de texto no seu computador, sem criptografia, então é um risco de segurança se você esquecer de apagar ela. Caso apareça alguma janela, apenas feche ela que suas credenciais ficaram temporariamente salvas agora, para evitar a inconveniência de digitá-las toda vez.
 
 Para fazer um merge de uma branch com a master branch, utilize: `git merge <nome da branch> -m “mensagem explicando o merge”`
 
